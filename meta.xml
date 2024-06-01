@@ -1,0 +1,30 @@
+<meta>
+    <oop>true</oop>
+    <min_mta_version client="1.5.9-9.21643" server="1.5.9-9.21643"/>
+
+    <script src="server/main.lua" type="server"/>
+
+    <script src="server/injector/injector.lua" type="server"/>
+
+    <script src="server/utils/classlib.lua" type="server" include="true"/>
+    <script src="server/utils/table.lua" type="server" include="true"/>
+    <script src="server/utils/column-types.lua" type="server" include="true"/>
+
+    <script src="server/core/creator.lua" type="server" include="true"/>
+    <script src="server/core/builder.lua" type="server" include="true"/>
+    <script src="server/core/core.lua" type="server" include="true"/>
+    <script src="server/core/relations.lua" type="server" include="true"/>
+
+    <script src="server/core/queryBuilder/by.lua" type="server" include="true"/>
+    <script src="server/core/queryBuilder/delete.lua" type="server" include="true"/>
+    <script src="server/core/queryBuilder/join.lua" type="server" include="true"/>
+    <script src="server/core/queryBuilder/limit.lua" type="server" include="true"/>
+    <script src="server/core/queryBuilder/offset.lua" type="server" include="true"/>
+    <script src="server/core/queryBuilder/select.lua" type="server" include="true"/>
+    <script src="server/core/queryBuilder/update.lua" type="server" include="true"/>
+    <script src="server/core/queryBuilder/where.lua" type="server" include="true"/>
+
+    <script src="entities/Account.lua" type="server" include="true"/>
+
+    <export function="injectModule" type="server"/>
+</meta>
